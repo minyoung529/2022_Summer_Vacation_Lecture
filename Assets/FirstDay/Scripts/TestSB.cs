@@ -6,15 +6,17 @@ using UnityEngine;
 
 public class TestSB : MonoBehaviour
 {
+    StringBuilder sb;
     void Start()
     {
-        StringTest();
+        //StringTest();
     }
 
     private void StringTest()
     {
         string s = "";
-        StringBuilder sb = new StringBuilder();
+        
+        sb = new StringBuilder();
 
         Debug.Log($"String StartTime: {DateTime.Now.ToLongTimeString()}");
 

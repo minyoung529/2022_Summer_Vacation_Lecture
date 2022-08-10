@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerdd : MonoBehaviour
 {
     Animator anim;
     float speed = 2.0f;
@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         anim = this.GetComponent<Animator>();
+
     }
 
     void LateUpdate()
@@ -41,6 +42,5 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("isPunching");
         else if (Input.GetKeyDown(KeyCode.K))
             anim.SetTrigger("isKicking");
-            
     }
 }
